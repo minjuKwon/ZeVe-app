@@ -1,14 +1,178 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="345dp"
+        android:layout_height="190dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@color/lightBeige">
+
+        <ImageView
+            android:id="@+id/profileImg"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="17dp"
+            android:layout_marginLeft="17dp"
+            android:background="@color/lightBrown"
+            android:contentDescription="@string/imageView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="120dp"
+            android:text="@string/nickname"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/profileImg" />
+
+        <TextView
+            android:id="@+id/co2Txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginLeft="26dp"
+            android:text="@string/co2"
+            app:layout_constraintStart_toEndOf="@+id/profileImg"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageView
+            android:id="@+id/co2Img"
+            android:layout_width="77dp"
+            android:layout_height="14dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginLeft="7dp"
+            android:background="@color/green"
+            android:contentDescription="@string/co2"
+            app:layout_constraintStart_toEndOf="@+id/co2Txt"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/pointLeftTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginLeft="26dp"
+            android:text="@string/pointLeft"
+            app:layout_constraintStart_toEndOf="@+id/profileImg"
+            app:layout_constraintTop_toBottomOf="@id/co2Txt"/>
+
+        <ImageView
+            android:id="@+id/pointLeftImg"
+            android:layout_width="47dp"
+            android:layout_height="14dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginLeft="11dp"
+            android:background="@color/yellow"
+            android:contentDescription="@string/pointLeft"
+            app:layout_constraintStart_toEndOf="@+id/pointLeftTxt"
+            app:layout_constraintTop_toBottomOf="@id/co2Img"
+             />
+
+        <ImageView
+            android:id="@+id/pointLeftBox"
+            android:layout_width="30dp"
+            android:layout_height="14dp"
+            android:layout_marginTop="23dp"
+            android:background="@color/reddishBrown"
+            android:contentDescription="@string/imageView"
+            app:layout_constraintStart_toEndOf="@+id/pointLeftImg"
+            app:layout_constraintTop_toBottomOf="@id/co2Img" />
+
+        <TextView
+            android:id="@+id/getBadge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginLeft="26dp"
+            android:text="@string/getBadge"
+            app:layout_constraintStart_toEndOf="@+id/profileImg"
+            app:layout_constraintTop_toBottomOf="@id/pointLeftTxt"/>
+
+        <ImageView
+            android:id="@+id/badge1"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="149dp"
+            android:layout_marginLeft="149dp"
+            tools:src="@tools:sample/avatars"
+            android:contentDescription="@string/getBadge"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/getBadge"/>
+
+        <ImageView
+            android:id="@+id/badge2"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            tools:src="@tools:sample/avatars"
+            android:contentDescription="@string/getBadge"
+            app:layout_constraintStart_toEndOf="@id/badge1"
+            app:layout_constraintTop_toBottomOf="@id/getBadge"/>
+
+        <ImageView
+            android:id="@+id/badge"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:background="@color/reddishBrown"
+            android:contentDescription="@string/imageView"
+            app:layout_constraintStart_toEndOf="@id/badge2"
+            app:layout_constraintTop_toBottomOf="@id/getBadge" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_marginTop="240dp"
+        android:background="@color/lightBeige">
+
+        <TextView
+            android:id="@+id/ecoNews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginLeft="26dp"
+            android:text="@string/ecoNews"
+            android:fontFamily="@font/bm_hanna11yrs"
+            android:textSize="24sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:layout_marginTop="45dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </FrameLayout>
