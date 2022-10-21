@@ -7,7 +7,7 @@
     tools:context=".HomeFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="345dp"
+        android:layout_width="370dp"
         android:layout_height="190dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
@@ -94,7 +94,7 @@
             app:layout_constraintTop_toBottomOf="@id/co2Img" />
 
         <TextView
-            android:id="@+id/getBadge"
+            android:id="@+id/homGetBadgeTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="14dp"
@@ -105,7 +105,7 @@
             app:layout_constraintTop_toBottomOf="@id/pointLeftTxt"/>
 
         <ImageView
-            android:id="@+id/badge1"
+            android:id="@+id/homeBadge1"
             android:layout_width="50dp"
             android:layout_height="45dp"
             android:layout_marginTop="8dp"
@@ -114,10 +114,10 @@
             tools:src="@tools:sample/avatars"
             android:contentDescription="@string/getBadge"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/getBadge"/>
+            app:layout_constraintTop_toBottomOf="@id/homGetBadgeTxt"/>
 
         <ImageView
-            android:id="@+id/badge2"
+            android:id="@+id/homeBadge2"
             android:layout_width="50dp"
             android:layout_height="45dp"
             android:layout_marginTop="8dp"
@@ -125,11 +125,11 @@
             android:layout_marginLeft="8dp"
             tools:src="@tools:sample/avatars"
             android:contentDescription="@string/getBadge"
-            app:layout_constraintStart_toEndOf="@id/badge1"
-            app:layout_constraintTop_toBottomOf="@id/getBadge"/>
+            app:layout_constraintStart_toEndOf="@id/homeBadge1"
+            app:layout_constraintTop_toBottomOf="@id/homGetBadgeTxt"/>
 
         <ImageView
-            android:id="@+id/badge"
+            android:id="@+id/homeBadge3"
             android:layout_width="50dp"
             android:layout_height="45dp"
             android:layout_marginTop="8dp"
@@ -137,8 +137,8 @@
             android:layout_marginLeft="8dp"
             android:background="@color/reddishBrown"
             android:contentDescription="@string/imageView"
-            app:layout_constraintStart_toEndOf="@id/badge2"
-            app:layout_constraintTop_toBottomOf="@id/getBadge" />
+            app:layout_constraintStart_toEndOf="@id/homeBadge2"
+            app:layout_constraintTop_toBottomOf="@id/homGetBadgeTxt" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
