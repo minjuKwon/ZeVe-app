@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+
+    <ImageView
+        android:id="@+id/snsContentView"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/whiteYellowishGreen"
+        android:contentDescription="@string/imageView"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/snsContentName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:text="@string/nickname"
+        app:layout_constraintTop_toTopOf="@id/snsContentView"
+        app:layout_constraintStart_toStartOf="@id/snsContentView"/>
+
+    <TextView
+        android:id="@+id/snsContentDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="@string/date"
+        android:textSize="12sp"
+        app:layout_constraintTop_toTopOf="@id/snsContentView"
+        app:layout_constraintStart_toEndOf="@id/snsContentName"/>
+
+    <ImageView
+        android:id="@+id/snsContentReport"
+        android:layout_width="10dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        android:background="@color/dark"
+        app:layout_constraintTop_toTopOf="@id/snsContentView"
+        app:layout_constraintEnd_toEndOf="@id/snsContentView"/>
+
+    <ImageView
+        android:id="@+id/snsContentImg"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginRight="33dp"
+        android:background="@color/darkReddishBrown"
+        android:contentDescription="@string/imageView"
+        app:layout_constraintTop_toBottomOf="@id/snsContentName"
+        app:layout_constraintStart_toStartOf="@id/snsContentView"
+        app:layout_constraintEnd_toEndOf="@id/snsContentView"/>
+
+    <TextView
+        android:id="@+id/snsContentTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:text="blahBlah"
+        app:layout_constraintTop_toBottomOf="@id/snsContentImg"
+        app:layout_constraintStart_toStartOf="@id/snsContentView"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

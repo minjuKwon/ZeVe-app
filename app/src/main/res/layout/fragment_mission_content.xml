@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/mission"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/lightYellowishGreen"
+        android:contentDescription="@string/imageView"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/missionImg"
+        android:layout_width="65dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:background="@color/darkReddishBrown"
+        android:contentDescription="@string/imageView"
+        app:layout_constraintTop_toTopOf="@id/mission"
+        app:layout_constraintStart_toStartOf="@id/mission"/>
+
+    <TextView
+        android:id="@+id/missionName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="21dp"
+        android:text="@string/missionName"
+        app:layout_constraintTop_toTopOf="@id/mission"
+        app:layout_constraintStart_toEndOf="@id/missionImg"/>
+
+    <TextView
+        android:id="@+id/missionContent"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:fontFamily="@font/bm_hanna11yrs"
+        android:text="@string/missionContent"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/missionName" />
+
+    <TextView
+        android:id="@+id/getPointTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="21dp"
+        android:text="@string/getPoint"
+        android:textSize="12sp"
+        android:fontFamily="@font/bm_hanna11yrs"
+        app:layout_constraintTop_toBottomOf="@id/missionContent"
+        app:layout_constraintStart_toEndOf="@id/missionImg"/>
+
+    <TextView
+        android:id="@+id/pointTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:text="@string/point"
+        android:textSize="12sp"
+        android:fontFamily="@font/bm_hanna11yrs"
+        app:layout_constraintTop_toBottomOf="@id/missionContent"
+        app:layout_constraintStart_toEndOf="@id/getPointTxt"/>
+
+    <TextView
+        android:id="@+id/missionSuccessTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:text="@string/missionSuccess"
+        android:textSize="12sp"
+        android:fontFamily="@font/bm_hanna11yrs"
+        app:layout_constraintTop_toBottomOf="@id/missionContent"
+        app:layout_constraintStart_toEndOf="@id/pointTxt"/>
+
+    <TextView
+        android:id="@+id/missionTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:text="@string/mission"
+        android:textSize="12sp"
+        android:fontFamily="@font/bm_hanna11yrs"
+        app:layout_constraintTop_toBottomOf="@id/missionContent"
+        app:layout_constraintStart_toEndOf="@id/missionSuccessTxt"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
