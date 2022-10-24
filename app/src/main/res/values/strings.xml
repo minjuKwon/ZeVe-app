@@ -41,6 +41,7 @@
     <string name="vegan">비건</string>
     <string name="zeroWaste">제로웨이스트</string>
     <string name="bookmark">찜한가게</string>
+    <string name="storeName">가게이름</string>
     <string name="information">기본정보</string>
     <string name="open">영업일</string>
     <string name="rest">휴무일</string>
