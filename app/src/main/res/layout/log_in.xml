@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/brown">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/logInLay"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="163dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@color/beige"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginStart="37dp"
+            android:layout_marginLeft="37dp"
+            android:text="@string/id"
+            android:textSize="18sp"
+            android:fontFamily="@font/bm_hanna11yrs"
+            android:textColor="@color/darkBrown"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="37dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:text="@string/pwd"
+            android:textSize="18sp"
+            android:fontFamily="@font/bm_hanna11yrs"
+            android:textColor="@color/darkBrown"
+            app:layout_constraintTop_toBottomOf="@id/id"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <EditText
+            android:id="@+id/idEdit"
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginLeft="22dp"
+            android:inputType="textPersonName"
+            android:background="@color/reddishBrown"
+            android:textSize="20sp"
+            android:fontFamily="@font/bm_hanna11yrs"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/id"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/pwdEdit"
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginLeft="14dp"
+            android:inputType="textPassword"
+            android:background="@color/reddishBrown"
+            android:textSize="20sp"
+            android:fontFamily="@font/bm_hanna11yrs"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/idEdit"
+            app:layout_constraintStart_toEndOf="@id/pwd"
+            android:importantForAutofill="no" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/findIdBtn"
+        android:layout_width="115dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:background="@color/beige"
+        android:text="@string/forgotId"
+        android:textSize="18sp"
+        android:fontFamily="@font/bm_hanna11yrs"
+        android:textColor="@color/darkBrown"
+        app:layout_constraintTop_toBottomOf="@id/logInLay"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+        android:id="@+id/findPwdBtn"
+        android:layout_width="115dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:background="@color/beige"
+        android:text="@string/forgotPwd"
+        android:textSize="18sp"
+        android:fontFamily="@font/bm_hanna11yrs"
+        android:textColor="@color/darkBrown"
+        app:layout_constraintTop_toBottomOf="@id/logInLay"
+        app:layout_constraintStart_toEndOf="@id/findIdBtn"/>
+
+    <Button
+        android:id="@+id/logUpBtn"
+        android:layout_width="115dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:background="@color/beige"
+        android:text="@string/loginUp"
+        android:textSize="18sp"
+        android:fontFamily="@font/bm_hanna11yrs"
+        android:textColor="@color/darkBrown"
+        app:layout_constraintTop_toBottomOf="@id/logInLay"
+        app:layout_constraintStart_toEndOf="@id/findPwdBtn"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
