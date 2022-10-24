@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="15dp"
+    android:layout_marginStart="25dp"
+    android:layout_marginEnd="25dp"
+    android:background="@color/whiteYellowishGreen">
+
+    <TextView
+        android:id="@+id/storeDetailMenuName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/menu"
+        android:textSize="25sp"
+        android:fontFamily="@font/bm_hanna11yrs"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/storeDetailMenuTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:paddingStart="7dp"
+        android:paddingEnd="7dp"
+        android:background="@color/lightYellowishGreen"
+        android:text="@string/vegan"
+        android:textSize="12sp"
+        android:fontFamily="@font/bm_hanna11yrs"
+        app:layout_constraintTop_toBottomOf="@id/storeDetailMenuName"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/storeDetailMenuPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:fontFamily="@font/bm_hanna11yrs"
+        android:text="0000"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toStartOf="@id/storeDetailMenuWon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/storeDetailMenuWon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:fontFamily="@font/bm_hanna11yrs"
+        android:text="@string/won"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
