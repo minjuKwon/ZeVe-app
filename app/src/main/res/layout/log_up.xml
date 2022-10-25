@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/brown">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/logUpLay"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@color/beige"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/logUpIdEdit"
+            android:layout_width="254dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginLeft="22dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:inputType="textPersonName"
+            android:hint="@string/id"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:background="@color/reddishBrown"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:importantForAutofill="no" />
+
+        <Button
+            android:id="@+id/logUpIdBtn"
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginLeft="18dp"
+            android:background="@color/reddishBrown"
+            android:text="@string/checkOverlap"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@id/logUpIdEdit"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/logUpPwdEdit"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginEnd="21dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:inputType="textPassword"
+            android:hint="@string/pwd"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:background="@color/reddishBrown"
+            app:layout_constraintTop_toBottomOf="@id/logUpIdEdit"
+            app:layout_constraintStart_toStartOf="parent"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/logUpPwdCheckEdit"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginEnd="21dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:inputType="textPassword"
+            android:hint="@string/checkPwd"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:background="@color/reddishBrown"
+            app:layout_constraintTop_toBottomOf="@id/logUpPwdEdit"
+            app:layout_constraintStart_toStartOf="parent"
+            android:importantForAutofill="no" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/personInformLay"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@color/beige"
+        app:layout_constraintTop_toBottomOf="@id/logUpLay"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/logUpNameEdit"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginEnd="21dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:inputType="textPersonName"
+            android:hint="@string/name"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:background="@color/reddishBrown"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:importantForAutofill="no"/>
+
+        <TextView
+            android:id="@+id/logUpSex"
+            android:layout_width="95dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginLeft="21dp"
+            android:gravity="center"
+            android:text="@string/sex"
+            android:textColor="@color/white"
+            android:background="@color/reddishBrown"
+            app:layout_constraintTop_toBottomOf="@id/logUpNameEdit"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginLeft="27dp"
+            app:layout_constraintTop_toBottomOf="@id/logUpNameEdit"
+            app:layout_constraintStart_toEndOf="@id/logUpSex">
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="95dp"
+                android:layout_height="36dp"
+                android:gravity="center"
+                android:text="@string/M"
+                android:textColor="@color/white"
+                android:background="@color/reddishBrown"/>
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="95dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="27dp"
+                android:layout_marginLeft="27dp"
+                android:gravity="center"
+                android:text="@string/F"
+                android:textColor="@color/white"
+                android:background="@color/reddishBrown"/>
+        </RadioGroup>
+
+        <DatePicker
+            android:id="@+id/logUpDate"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginEnd="21dp"
+            android:textColor="@color/white"
+            android:background="@color/reddishBrown"
+            android:datePickerMode="spinner"
+            android:calendarViewShown="false"
+            app:layout_constraintTop_toBottomOf="@id/logUpSex"
+            app:layout_constraintStart_toEndOf="parent"
+        />
+
+        <EditText
+            android:id="@+id/logUpEmailEdit"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginEnd="21dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:inputType="textEmailAddress"
+            android:hint="@string/email"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:background="@color/reddishBrown"
+            app:layout_constraintTop_toBottomOf="@id/logUpDate"
+            app:layout_constraintStart_toStartOf="parent"
+            android:importantForAutofill="no"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/certificationLay"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@color/beige"
+        app:layout_constraintTop_toBottomOf="@id/personInformLay"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
