@@ -4,16 +4,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <ImageView
-        android:id="@+id/mission"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginTop="25dp"
-        android:background="@color/lightYellowishGreen"
-        android:contentDescription="@string/imageView"
-        app:layout_constraintTop_toTopOf="parent"/>
+    android:layout_height="100dp"
+    android:layout_marginTop="25dp"
+    android:background="@color/lightYellowishGreen">
 
     <ImageView
         android:id="@+id/missionImg"
@@ -24,8 +17,8 @@
         android:layout_marginLeft="15dp"
         android:background="@color/darkReddishBrown"
         android:contentDescription="@string/imageView"
-        app:layout_constraintTop_toTopOf="@id/mission"
-        app:layout_constraintStart_toStartOf="@id/mission"/>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
 
     <TextView
         android:id="@+id/missionName"
@@ -35,7 +28,7 @@
         android:layout_marginStart="21dp"
         android:layout_marginLeft="21dp"
         android:text="@string/missionName"
-        app:layout_constraintTop_toTopOf="@id/mission"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toEndOf="@id/missionImg"/>
 
     <TextView
