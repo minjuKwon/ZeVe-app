@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/homeMenu"
+        android:enabled="true"
+        android:icon="@drawable/ic_home"
+        android:title="Item" />
+    <item
+        android:id="@+id/spaceMenu"
+        android:enabled="true"
+        android:icon="@drawable/ic_space"
+        android:title="Item"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/missionMenu"
+        android:enabled="true"
+        android:icon="@drawable/ic_mission"
+        android:title="Item"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/storeMenu"
+        android:enabled="true"
+        android:icon="@drawable/ic_shop"
+        android:title="Item"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/settingMenu"
+        android:enabled="true"
+        android:icon="@drawable/ic_setting"
+        android:title="Item"
+        app:showAsAction="always"/>
+</menu>
