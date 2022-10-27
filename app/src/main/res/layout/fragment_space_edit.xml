@@ -16,7 +16,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginStart="10dp"
         android:layout_marginLeft="10dp"
-        tools:srcCompat="@tools:sample/avatars"
+        android:src="@drawable/ic_paint"
         android:contentDescription="@string/imageView"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
@@ -28,7 +28,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginStart="10dp"
         android:layout_marginLeft="10dp"
-        tools:srcCompat="@tools:sample/avatars"
+        android:src="@drawable/ic_forest"
         android:contentDescription="@string/imageView"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toEndOf="@id/editPaint"/>
@@ -40,7 +40,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginStart="10dp"
         android:layout_marginLeft="10dp"
-        tools:srcCompat="@tools:sample/avatars"
+        android:src="@drawable/ic_sea"
         android:contentDescription="@string/imageView"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toEndOf="@id/editForest"/>
@@ -52,7 +52,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginStart="10dp"
         android:layout_marginLeft="10dp"
-        tools:srcCompat="@tools:sample/avatars"
+        android:src="@drawable/ic_mud"
         android:contentDescription="@string/imageView"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toEndOf="@id/editSea"/>

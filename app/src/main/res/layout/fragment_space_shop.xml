@@ -14,7 +14,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginStart="15dp"
         android:layout_marginLeft="15dp"
-        tools:srcCompat="@tools:sample/avatars"
+        android:src="@drawable/ic_back"
         android:contentDescription="@string/imageView"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
@@ -26,7 +26,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
-        tools:srcCompat="@tools:sample/avatars"
+        android:src="@drawable/ic_paint"
         android:contentDescription="@string/imageView"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toEndOf="@id/shopBack"/>
@@ -38,7 +38,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginStart="10dp"
         android:layout_marginLeft="10dp"
-        tools:srcCompat="@tools:sample/avatars"
+        android:src="@drawable/ic_forest"
         android:contentDescription="@string/imageView"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toEndOf="@id/shopPaint"/>
@@ -50,7 +50,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginStart="10dp"
         android:layout_marginLeft="10dp"
-        tools:srcCompat="@tools:sample/avatars"
+        android:src="@drawable/ic_sea"
         android:contentDescription="@string/imageView"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toEndOf="@id/shopForest"/>
@@ -62,7 +62,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginStart="10dp"
         android:layout_marginLeft="10dp"
-        tools:srcCompat="@tools:sample/avatars"
+        android:src="@drawable/ic_mud"
         android:contentDescription="@string/imageView"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toEndOf="@id/shopSea"/>

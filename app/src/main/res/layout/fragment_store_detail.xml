@@ -309,7 +309,7 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="17dp"
                 android:layout_marginRight="17dp"
-                app:srcCompat="@android:drawable/ic_menu_edit"
+                app:srcCompat="@drawable/ic_pencil"
                 android:contentDescription="@string/imageView"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"/>

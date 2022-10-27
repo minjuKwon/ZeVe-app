@@ -40,7 +40,7 @@
         android:layout_marginTop="11dp"
         android:layout_marginEnd="13dp"
         android:layout_marginRight="13dp"
-        android:background="@color/dark"
+        android:src="@drawable/ic_dot"
         android:contentDescription="@string/imageView"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
