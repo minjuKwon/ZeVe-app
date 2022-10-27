@@ -14,19 +14,19 @@ import java.util.Arrays;
 import java.util.List;
 
 
-public class StoreBookmarkFragment extends Fragment {
+public class StoreVeganFragment extends Fragment {
     private StoreAdapter adapter;
     private View v;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        v= inflater.inflate(R.layout.fragment_store_bookmark, container, false);
-        init();
-        getData();
-        return v;
+       v= inflater.inflate(R.layout.fragment_store_vegan, container, false);
+       init();
+       getData();
+       return v;
     }
     private void init(){
-        RecyclerView recyclerView=(RecyclerView)v.findViewById(R.id.bookMarkRecyclerView);
+        RecyclerView recyclerView=(RecyclerView)v.findViewById(R.id.veganRecyclerView);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity());
         recyclerView.setLayoutManager(linearLayoutManager);
         adapter=new StoreAdapter();
