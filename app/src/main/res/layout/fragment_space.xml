@@ -7,33 +7,110 @@
     android:background="@color/lightBeige"
     tools:context=".SpaceFragment">
 
-    <ImageView
-        android:id="@+id/spaceShop"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="250dp"
-        android:layout_marginLeft="250dp"
-        android:src="@drawable/ic_shop"
-        android:contentDescription="@string/imageView"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/spaceEdit"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="295dp"
-        android:layout_marginLeft="295dp"
-        android:src="@drawable/ic_edit"
-        android:contentDescription="@string/imageView"/>
+        <ImageView
+            android:id="@+id/spaceShop"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginLeft="250dp"
+            android:contentDescription="@string/imageView"
+            android:src="@drawable/ic_shop"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:clickable="true"
+            android:focusable="true" />
 
-    <ImageView
-        android:id="@+id/spacePlus"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginStart="335dp"
-        android:layout_marginLeft="335dp"
-        android:src="@drawable/ic_plus"
-        android:contentDescription="@string/imageView"/>
+        <ImageView
+            android:id="@+id/spaceEdit"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:contentDescription="@string/imageView"
+            android:src="@drawable/ic_edit"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/spaceShop"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <ImageView
+            android:id="@+id/spacePlus"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:contentDescription="@string/imageView"
+            android:src="@drawable/ic_plus"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/spaceEdit"
+            android:clickable="true"
+            android:focusable="true" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/spaceEditLay"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="402dp"
+        android:background="@color/brown"
+
+        >
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/spaceEditTabLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tabGravity="center">
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/veganTab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/paint"></com.google.android.material.tabs.TabItem>
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/zeroWasteTab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/forest"></com.google.android.material.tabs.TabItem>
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/bookMarkTab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sea"></com.google.android.material.tabs.TabItem>
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/mudTab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mud"></com.google.android.material.tabs.TabItem>
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/spaceEditViewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 </FrameLayout>
