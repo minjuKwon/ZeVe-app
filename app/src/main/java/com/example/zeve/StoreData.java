@@ -3,7 +3,7 @@ package com.example.zeve;
 public class StoreData {
 
     private int storeImg;
-    private String heart;
+    private int heart;
     private String storeName;
     private String storeTag;
 
@@ -11,7 +11,7 @@ public class StoreData {
         return storeImg;
     }
 
-    public String getHeart() {
+    public int getHeart() {
         return heart;
     }
 
@@ -27,7 +27,7 @@ public class StoreData {
         this.storeImg = storeImg;
     }
 
-    public void setHeart(String heart) {
+    public void setHeart(int heart) {
         this.heart = heart;
     }
 

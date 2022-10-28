@@ -50,7 +50,7 @@ public class StoreAdapter extends RecyclerView.Adapter<StoreAdapter.ItemViewHold
         void onBind(StoreData data){
             imageView.setImageResource(data.getStoreImg());
             textView1.setText(data.getStoreName());
-            textView2.setText(data.getHeart());
+            textView2.setText(String.valueOf(data.getHeart()));
             textView3.setText(data.getStoreTag());
         }
     }

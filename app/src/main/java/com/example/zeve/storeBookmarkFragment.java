@@ -39,8 +39,8 @@ public class StoreBookmarkFragment extends Fragment {
                 R.drawable.ic_launcher_foreground,
                 R.drawable.ic_launcher_foreground
         );
-        List<String> listHeart=Arrays.asList(
-                "10","5","4","2"
+        List<Integer> listHeart=Arrays.asList(
+                10,5,4,2
         );
         List<String> listName=Arrays.asList(
                 "가게1","가게2","가게3","가게4"
