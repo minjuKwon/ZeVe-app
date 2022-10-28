@@ -75,25 +75,25 @@
             app:tabGravity="center">
 
             <com.google.android.material.tabs.TabItem
-                android:id="@+id/veganTab"
+                android:id="@+id/editPaintTab"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/paint"></com.google.android.material.tabs.TabItem>
 
             <com.google.android.material.tabs.TabItem
-                android:id="@+id/zeroWasteTab"
+                android:id="@+id/editForestTab"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/forest"></com.google.android.material.tabs.TabItem>
 
             <com.google.android.material.tabs.TabItem
-                android:id="@+id/bookMarkTab"
+                android:id="@+id/editSeaTab"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/sea"></com.google.android.material.tabs.TabItem>
 
             <com.google.android.material.tabs.TabItem
-                android:id="@+id/mudTab"
+                android:id="@+id/editMudTab"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/mud"></com.google.android.material.tabs.TabItem>
