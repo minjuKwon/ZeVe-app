@@ -20,6 +20,7 @@
 
         <activity android:name=".StoreDetail"></activity>
         <activity android:name=".SpaceShop"></activity>
+        <activity android:name=".MissionDesc"></activity>
     </application>
 
 </manifest>

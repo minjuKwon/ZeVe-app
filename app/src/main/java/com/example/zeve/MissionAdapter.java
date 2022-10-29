@@ -1,5 +1,9 @@
 package com.example.zeve;
 
+import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -7,6 +11,12 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
@@ -14,6 +24,8 @@ import java.util.ArrayList;
 public class MissionAdapter extends RecyclerView.Adapter<MissionAdapter.ItemViewHolder> {
 
     private ArrayList<MissionData> missionData=new ArrayList<>();
+    private MissionDesc mission;
+    private Intent intent;
 
     @NonNull
     @Override
@@ -24,6 +36,16 @@ public class MissionAdapter extends RecyclerView.Adapter<MissionAdapter.ItemView
     @Override
     public void onBindViewHolder(@NonNull ItemViewHolder holder,int position){
         holder.onBind(missionData.get(position));
+        mission=new MissionDesc();
+
+        holder.cons.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                intent = new Intent(view.getContext(), MissionDesc.class);
+                intent.putExtra("number", position);
+                view.getContext().startActivity(intent);
+            }
+        });
     }
     @Override
     public int getItemCount(){
@@ -34,6 +56,7 @@ public class MissionAdapter extends RecyclerView.Adapter<MissionAdapter.ItemView
     }
 
     class ItemViewHolder extends RecyclerView.ViewHolder{
+        private ConstraintLayout cons;
         private ImageView imageView;
         private TextView textView1 ;
         private TextView textView2 ;
@@ -47,6 +70,7 @@ public class MissionAdapter extends RecyclerView.Adapter<MissionAdapter.ItemView
             textView2=itemView.findViewById(R.id.missionContent);
             textView3=itemView.findViewById(R.id.pointTxt);
             textView4=itemView.findViewById(R.id.missionSuccessTxt);
+            cons=itemView.findViewById(R.id.missionLay);
         }
         void onBind(MissionData data){
             imageView.setImageResource(data.getMissionImgId());
