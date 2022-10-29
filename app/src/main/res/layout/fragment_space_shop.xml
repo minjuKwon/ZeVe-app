@@ -3,6 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/spaceShopLay"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/brown">
@@ -17,59 +18,54 @@
         android:src="@drawable/ic_back"
         android:contentDescription="@string/imageView"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent"
+        android:clickable="true"
+        android:focusable="true"/>
 
-    <ImageView
-        android:id="@+id/shopPaint"
-        android:layout_width="30dp"
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/spaceShopTabLayout"
+        android:layout_width="wrap_content"
         android:layout_height="30dp"
         android:layout_marginTop="20dp"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
-        android:src="@drawable/ic_paint"
-        android:contentDescription="@string/imageView"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toEndOf="@id/shopBack"/>
+        app:layout_constraintStart_toEndOf="@id/shopBack"
+        app:tabGravity="center">
 
-    <ImageView
-        android:id="@+id/shopForest"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="10dp"
-        android:src="@drawable/ic_forest"
-        android:contentDescription="@string/imageView"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toEndOf="@id/shopPaint"/>
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/shopPaintTab"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="@string/paint"></com.google.android.material.tabs.TabItem>
 
-    <ImageView
-        android:id="@+id/shopSea"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="10dp"
-        android:src="@drawable/ic_sea"
-        android:contentDescription="@string/imageView"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toEndOf="@id/shopForest"/>
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/shopForestTab"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="@string/forest"></com.google.android.material.tabs.TabItem>
 
-    <ImageView
-        android:id="@+id/shopMud"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="10dp"
-        android:src="@drawable/ic_mud"
-        android:contentDescription="@string/imageView"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toEndOf="@id/shopSea"/>
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/shopSeaTab"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="@string/sea"></com.google.android.material.tabs.TabItem>
 
-    <androidx.recyclerview.widget.RecyclerView
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/shopMudTab"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="@string/mud"></com.google.android.material.tabs.TabItem>
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/spaceShopViewpager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="50dp"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:scrollbars="vertical"
+        android:layout_marginTop="52dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spaceShopTabLayout" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

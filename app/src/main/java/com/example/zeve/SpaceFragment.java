@@ -1,5 +1,6 @@
 package com.example.zeve;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -21,7 +22,7 @@ public class SpaceFragment extends Fragment {
     private SpaceEditForestFragment forestF;
     private SpaceEditSeaFragment seaF;
     private SpaceEditMudFragment mudF;
-    int count=0;
+    private int count=0;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -37,13 +38,21 @@ public class SpaceFragment extends Fragment {
         editImg.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-               count++;
                 if(count%2==1){
                     editLay.setVisibility(View.VISIBLE);
                 }else{
                     editLay.setVisibility(View.GONE);
                 }
+                count++;
 
+            }
+        });
+        ImageView shopImg=(ImageView)v.findViewById(R.id.spaceShop);
+        shopImg.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getActivity(),SpaceShop.class);
+                startActivity(intent);
             }
         });
         return v;
