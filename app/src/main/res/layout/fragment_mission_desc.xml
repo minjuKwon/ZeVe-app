@@ -15,6 +15,7 @@
         android:layout_marginLeft="156dp"
         android:layout_marginTop="24dp"
         android:text="@string/missionName"
+        android:fontFamily="@font/bm_hanna11yrs"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -26,7 +27,8 @@
         android:layout_marginTop="15dp"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
-        android:background="@color/darkReddishBrown"
+        android:src="@drawable/ecobag_illust"
+        android:scaleType="fitXY"
         android:contentDescription="@string/imageView"
         app:layout_constraintTop_toBottomOf="@id/missionDescName"
         app:layout_constraintStart_toStartOf="parent"/>
@@ -39,18 +41,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/missionDescBadge"
         android:contentDescription="@string/imageView"
-        android:background="@color/brown"/>
+        android:src="@drawable/mission_desc_img"
+        android:scaleType="fitXY"/>
 
     <TextView
         android:id="@+id/missionDescTxt"
         android:layout_width="match_parent"
         android:layout_height="80dp"
-        android:layout_marginTop="56dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
         android:text="@string/missionDescription"
+        android:fontFamily="@font/bm_hanna11yrs"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/missionDescImg" />
@@ -63,6 +68,7 @@
         android:layout_marginStart="104dp"
         android:layout_marginLeft="104dp"
         android:text="@string/upload"
+        android:fontFamily="@font/bm_hanna11yrs"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/missionDescImg" />
     </androidx.constraintlayout.widget.ConstraintLayout>

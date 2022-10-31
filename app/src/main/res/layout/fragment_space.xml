@@ -9,22 +9,24 @@
     tools:context=".SpaceFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/spaceLay"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@drawable/space">
 
         <ImageView
             android:id="@+id/spaceShop"
             android:layout_width="30dp"
             android:layout_height="30dp"
+            android:layout_marginStart="280dp"
+            android:layout_marginLeft="280dp"
             android:layout_marginTop="20dp"
-            android:layout_marginStart="250dp"
-            android:layout_marginLeft="250dp"
-            android:contentDescription="@string/imageView"
-            android:src="@drawable/ic_shop"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
             android:clickable="true"
-            android:focusable="true" />
+            android:contentDescription="@string/imageView"
+            android:focusable="true"
+            android:src="@drawable/ic_shop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/spaceEdit"
@@ -40,19 +42,19 @@
             android:clickable="true"
             android:focusable="true" />
 
-        <ImageView
-            android:id="@+id/spacePlus"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginLeft="20dp"
-            android:contentDescription="@string/imageView"
-            android:src="@drawable/ic_plus"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toEndOf="@id/spaceEdit"
-            android:clickable="true"
-            android:focusable="true" />
+<!--        <ImageView-->
+<!--            android:id="@+id/spacePlus"-->
+<!--            android:layout_width="40dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:layout_marginStart="20dp"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:contentDescription="@string/imageView"-->
+<!--            android:src="@drawable/ic_plus"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintStart_toEndOf="@id/spaceEdit"-->
+<!--            android:clickable="true"-->
+<!--            android:focusable="true" />-->
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout

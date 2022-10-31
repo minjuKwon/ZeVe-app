@@ -18,7 +18,7 @@
         android:layout_marginTop="15dp"
         android:layout_marginStart="15dp"
         android:layout_marginLeft="15dp"
-        android:background="@color/darkReddishBrown"
+        android:src="@drawable/mission_img"
         android:contentDescription="@string/imageView"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
@@ -31,6 +31,8 @@
         android:layout_marginStart="21dp"
         android:layout_marginLeft="21dp"
         android:text="@string/missionName"
+        android:textSize="15sp"
+        android:fontFamily="@font/bm_hanna11yrs"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toEndOf="@id/missionImg"/>
 

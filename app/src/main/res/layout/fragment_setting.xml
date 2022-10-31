@@ -23,6 +23,8 @@
             android:layout_marginStart="30dp"
             android:layout_marginLeft="30dp"
             android:text="@string/getBadge"
+            android:textSize="17sp"
+            android:fontFamily="@font/bm_hanna11yrs"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"/>
 
@@ -45,7 +47,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginStart="30dp"
             android:layout_marginLeft="30dp"
-            tools:src="@tools:sample/avatars"
+            android:src="@drawable/vegan_illust"
             android:contentDescription="@string/getBadge"
             app:layout_constraintTop_toBottomOf="@id/getBadgeTxt"
             app:layout_constraintStart_toStartOf="parent"/>
@@ -57,7 +59,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginStart="35dp"
             android:layout_marginLeft="35dp"
-            tools:src="@tools:sample/avatars"
+           android:src="@drawable/ecobag_illust"
             android:contentDescription="@string/getBadge"
             app:layout_constraintTop_toBottomOf="@id/getBadgeTxt"
             app:layout_constraintStart_toEndOf="@id/badge1"/>
@@ -102,6 +104,8 @@
             android:layout_marginLeft="156dp"
             android:layout_marginTop="15dp"
             android:text="@string/bookmark"
+            android:textSize="17sp"
+            android:fontFamily="@font/bm_hanna11yrs"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -113,6 +117,8 @@
             android:layout_marginLeft="148dp"
             android:layout_marginTop="58dp"
             android:text="@string/writtenReview"
+            android:textSize="17sp"
+            android:fontFamily="@font/bm_hanna11yrs"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -131,6 +137,8 @@
             android:layout_marginLeft="156dp"
             android:layout_marginTop="20dp"
             android:text="@string/notice"
+            android:textSize="17sp"
+            android:fontFamily="@font/bm_hanna11yrs"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -142,6 +150,8 @@
             android:layout_marginLeft="156dp"
             android:layout_marginTop="60dp"
             android:text="@string/inquire"
+            android:textSize="17sp"
+            android:fontFamily="@font/bm_hanna11yrs"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -153,6 +163,8 @@
             android:layout_marginLeft="156dp"
             android:layout_marginTop="104dp"
             android:text="@string/logout"
+            android:textSize="17sp"
+            android:fontFamily="@font/bm_hanna11yrs"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -164,6 +176,8 @@
             android:layout_marginLeft="156dp"
             android:layout_marginTop="150dp"
             android:text="@string/quit"
+            android:textSize="17sp"
+            android:fontFamily="@font/bm_hanna11yrs"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
