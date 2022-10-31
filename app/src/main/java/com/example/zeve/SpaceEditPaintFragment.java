@@ -33,14 +33,7 @@ public class SpaceEditPaintFragment extends Fragment {
     }
     private void getData(){
         List<Integer> listContentImg= Arrays.asList(
-                R.drawable.ic_launcher_foreground,
-                R.drawable.ic_launcher_foreground,
-                R.drawable.ic_launcher_foreground,
-                R.drawable.ic_launcher_foreground,
-                R.drawable.ic_launcher_foreground,
-                R.drawable.ic_launcher_foreground,
-                R.drawable.ic_launcher_foreground,
-                R.drawable.ic_launcher_foreground
+                R.drawable.paint
         );
 
         for(int i=0;i<listContentImg.size();i++){

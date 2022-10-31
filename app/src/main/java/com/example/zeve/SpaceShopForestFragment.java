@@ -35,17 +35,15 @@ public class SpaceShopForestFragment extends Fragment {
     }
     private void getData(){
         List<Integer> listContentImg= Arrays.asList(
-                R.drawable.ic_launcher_background,
-                R.drawable.ic_launcher_foreground,
-                R.drawable.ic_launcher_foreground,
-                R.drawable.ic_launcher_background,
-                R.drawable.ic_launcher_foreground
+                R.drawable.cloud,
+                R.drawable.maple_tree,
+                R.drawable.ginkgo_tree
         );
         List<Integer> listCoin= Arrays.asList(
-               1,2,3,4,5
+             2,10,10
         );
         List<String> listName= Arrays.asList(
-              "숲1","숲2","숲3","숲4","숲5"
+              "구름","단풍나무","은행나무"
         );
 
         for(int i=0;i<listContentImg.size();i++){

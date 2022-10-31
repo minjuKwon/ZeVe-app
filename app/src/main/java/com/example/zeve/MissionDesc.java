@@ -2,14 +2,11 @@ package com.example.zeve;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
 
 public class MissionDesc extends AppCompatActivity {
 
@@ -30,34 +27,34 @@ public class MissionDesc extends AppCompatActivity {
 
             switch (position){
                 case 0:
-                    img.setImageResource(R.drawable.ic_setting);
-                    title.setText("미션1");
-                    content.setText("미션설명어쩌구어자아안미아렁ㅁ 아어란이르아이알아아러아ㅓㄹ다 ㅇ아러아호아민야야ㅑ양로양화아 아롱햐도해쟈오햐됴매캬야아유하");
+                    img.setImageResource(R.drawable.vegan_illust);
+                    title.setText("채식하기");
+                    content.setText("채식에도 여러 종류가 있답니다. 비건,락토,오보,페스코 등등. 무조건 채식이 아니라 지향하는 삶도 나쁘지 않을지 몰라요");
                     break;
                 case 1:
-                    img.setImageResource(R.drawable.ic_forest);
-                    title.setText("미션2");
-                    content.setText("미션설명어쩌구어자아안미아렁ㅁ 아어란이르아이알아아러아ㅓㄹ다 ㅇ아러아호아민야야ㅑ양로양화아 아롱햐도해쟈오햐됴매캬야아유하");
+                    img.setImageResource(R.drawable.ecobag_illust);
+                    title.setText("봉투들기");
+                    content.setText("원래 비닐봉투도 여러번 사용하기 위해 만들어졌답니다. 여러번 사용하는 것이 제일 중요하지요");
                     break;
                 case 2:
-                    img.setImageResource(R.drawable.ic_launcher_foreground);
-                    title.setText("미션3");
-                    content.setText("미션설명어쩌구어자아안미아렁ㅁ 아어란이르아이알아아러아ㅓㄹ다 ㅇ아러아호아민야야ㅑ양로양화아 아롱햐도해쟈오햐됴매캬야아유하");
+                    img.setImageResource(R.drawable.mission_img);
+                    title.setText("분리배출");
+                    content.setText("분리배출을 잘하는 것만으로 큰 도움이 됩니다. 이번기회에 제대로 공부하고 실천해봐요");
                     break;
                 case 3:
-                    img.setImageResource(R.drawable.ic_launcher_background);
-                    title.setText("미션4");
-                    content.setText("미션설명어쩌구어자아안미아렁ㅁ 아어란이르아이알아아러아ㅓㄹ다 ㅇ아러아호아민야야ㅑ양로양화아 아롱햐도해쟈오햐됴매캬야아유하");
+                    img.setImageResource(R.drawable.mission_img);
+                    title.setText("줍깅");
+                    content.setText("길거리에 쓰레기를 버러지 않는 것이 제일 중요하지만 벌써 버려진 쓰레기는 어쩔 수 없죠 착한 여러분이 주워보세요");
                     break;
                 case 4:
-                    img.setImageResource(R.drawable.ic_camera);
-                    title.setText("미션5");
-                    content.setText("미션설명어쩌구어자아안미아렁ㅁ 아어란이르아이알아아러아ㅓㄹ다 ㅇ아러아호아민야야ㅑ양로양화아 아롱햐도해쟈오햐됴매캬야아유하");
+                    img.setImageResource(R.drawable.mission_img);
+                    title.setText("걷기");
+                    content.setText("대중교통을 이용하거나 건강을 위해 걷는 것도 훌륭한 도움입니다. 벌써 환경운동을 하고 있을지도 몰라요!");
                     break;
                 case 5:
-                    img.setImageResource(R.drawable.ic_setting);
-                    title.setText("미션6");
-                    content.setText("미션설명어쩌구어자아안미아렁ㅁ 아어란이르아이알아아러아ㅓㄹ다 ㅇ아러아호아민야야ㅑ양로양화아 아롱햐도해쟈오햐됴매캬야아유하");
+                    img.setImageResource(R.drawable.mission_img);
+                    title.setText("제로웨이스트");
+                    content.setText("요즘 친환경 제품이 많이 나오고 있습니다. 쓰레기를 아예 줄일 수는 없으니 친환경 분해 제품 선택도 좋죠");
                     break;
 
             }

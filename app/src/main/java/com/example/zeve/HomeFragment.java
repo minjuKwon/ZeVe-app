@@ -35,9 +35,9 @@ public class HomeFragment extends Fragment {
     }
     private void getData(){
         List<Integer> listResId= Arrays.asList(
-                R.drawable.ic_launcher_foreground,
-                R.drawable.ic_launcher_foreground,
-                R.drawable.ic_launcher_foreground
+                R.drawable.eco_news1,
+                R.drawable.eco_news2,
+                R.drawable.eco_news3
         );
         for(int i=0;i<listResId.size();i++){
             EcoNewsData data=new EcoNewsData();

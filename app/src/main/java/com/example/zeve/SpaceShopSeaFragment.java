@@ -35,17 +35,16 @@ public class SpaceShopSeaFragment extends Fragment {
     }
     private void getData(){
         List<Integer> listContentImg= Arrays.asList(
-                R.drawable.ic_launcher_background,
-                R.drawable.ic_launcher_foreground,
-                R.drawable.ic_launcher_foreground,
-                R.drawable.ic_launcher_background,
-                R.drawable.ic_launcher_foreground
-        );
+                R.drawable.light,
+                R.drawable.coral,
+                R.drawable.seaweed,
+                R.drawable.fish
+                );
         List<Integer> listCoin= Arrays.asList(
-                1,2,3,4,5
+                2,5,5,10
         );
         List<String> listName= Arrays.asList(
-                "바다1","바다2","바다3","바다4","바다5"
+                "햇빛","산호","해초","물고기"
         );
 
         for(int i=0;i<listContentImg.size();i++){

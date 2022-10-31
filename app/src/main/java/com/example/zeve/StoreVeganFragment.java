@@ -34,19 +34,22 @@ public class StoreVeganFragment extends Fragment {
     }
     private void getData(){
         List<Integer> listContentImg= Arrays.asList(
-                R.drawable.ic_launcher_foreground,
-                R.drawable.ic_launcher_foreground,
-                R.drawable.ic_launcher_foreground,
-                R.drawable.ic_launcher_foreground
+                R.drawable.store_img,
+                R.drawable.store_img,
+                R.drawable.store_img,
+                R.drawable.store_img,
+                R.drawable.store_img,
+                R.drawable.store_img,
+                R.drawable.store_img
         );
         List<Integer> listHeart=Arrays.asList(
-               10,5,4,2
+               12,21,16,13,8,15,18
         );
         List<String> listName=Arrays.asList(
-                "가게1","가게2","가게3","가게4"
+                "엽전식당","황토방묵집","소문난 막국수","아차가","안동화련","어번샐러드","초밥일번지"
         );
         List<String> listTag=Arrays.asList(
-                "비건","비건","비건","비건"
+                "비건","비건","비건","비건","페스코","락토","페스코"
         );
         for(int i=0;i<listContentImg.size();i++){
             StoreData data=new StoreData();

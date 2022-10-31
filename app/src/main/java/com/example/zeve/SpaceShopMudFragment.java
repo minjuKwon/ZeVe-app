@@ -35,17 +35,13 @@ public class SpaceShopMudFragment extends Fragment {
     }
     private void getData(){
         List<Integer> listContentImg= Arrays.asList(
-                R.drawable.ic_launcher_background,
-                R.drawable.ic_launcher_foreground,
-                R.drawable.ic_launcher_foreground,
-                R.drawable.ic_launcher_background,
-                R.drawable.ic_launcher_foreground
+                R.drawable.shell
         );
         List<Integer> listCoin= Arrays.asList(
-                1,2,3,4,5
+                5
         );
         List<String> listName= Arrays.asList(
-                "뻘1","뻘2","뻘3","뻘4","뻘5"
+                "개량조개"
         );
 
         for(int i=0;i<listContentImg.size();i++){

@@ -37,19 +37,18 @@ public class StoreZerowasteFragment extends Fragment {
 
     private void getData() {
         List<Integer> listContentImg = Arrays.asList(
-                R.drawable.ic_launcher_foreground,
-                R.drawable.ic_launcher_foreground,
-                R.drawable.ic_launcher_foreground,
-                R.drawable.ic_launcher_foreground
+                R.drawable.store_img,
+                R.drawable.store_img,
+                R.drawable.store_img
         );
         List<Integer> listHeart = Arrays.asList(
-                10,5,4,2
+                10,21,14
         );
         List<String> listName = Arrays.asList(
-                "가게1", "가게2", "가게3", "가게4"
+                "초록별상점", "더쓸모협동조합", "협동조합농부장터"
         );
         List<String> listTag = Arrays.asList(
-                "비건", "비건", "비건", "비건"
+                "제로웨이스트샵", "제로웨이스트샵", "로컬푸드"
         );
         for (int i = 0; i < listContentImg.size(); i++) {
             StoreData data = new StoreData();

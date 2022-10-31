@@ -35,17 +35,13 @@ public class SpaceShopPaintFragment extends Fragment {
     }
     private void getData(){
         List<Integer> listContentImg= Arrays.asList(
-                R.drawable.ic_launcher_background,
-                R.drawable.ic_launcher_foreground,
-                R.drawable.ic_launcher_foreground,
-                R.drawable.ic_launcher_background,
-                R.drawable.ic_launcher_foreground
+                R.drawable.paint
         );
         List<Integer> listCoin= Arrays.asList(
-                1,2,3,4,5
+                2
         );
         List<String> listName= Arrays.asList(
-                "색1","색2","색3","색4","색5"
+                "바다색"
         );
 
         for(int i=0;i<listContentImg.size();i++){

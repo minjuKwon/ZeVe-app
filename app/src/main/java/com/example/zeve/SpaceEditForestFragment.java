@@ -24,6 +24,8 @@ public class SpaceEditForestFragment extends Fragment {
         v= inflater.inflate(R.layout.fragment_space_edit_forest, container, false);
         init();
         getData();
+
+
         return v;
     }
     private void init(){
@@ -35,14 +37,9 @@ public class SpaceEditForestFragment extends Fragment {
     }
     private void getData(){
         List<Integer> listContentImg= Arrays.asList(
-                R.drawable.ic_launcher_background,
-                R.drawable.ic_launcher_foreground,
-                R.drawable.ic_launcher_foreground,
-                R.drawable.ic_launcher_background,
-                R.drawable.ic_launcher_foreground,
-                R.drawable.ic_launcher_foreground,
-                R.drawable.ic_launcher_foreground,
-                R.drawable.ic_launcher_foreground
+                R.drawable.cloud,
+                R.drawable.maple_tree,
+                R.drawable.ginkgo_tree
         );
 
         for(int i=0;i<listContentImg.size();i++){

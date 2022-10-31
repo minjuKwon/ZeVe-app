@@ -33,14 +33,10 @@ public class SpaceEditSeaFragment extends Fragment {
     }
     private void getData(){
         List<Integer> listContentImg= Arrays.asList(
-                R.drawable.ic_launcher_foreground,
-                R.drawable.ic_launcher_foreground,
-                R.drawable.ic_launcher_foreground,
-                R.drawable.ic_launcher_foreground,
-                R.drawable.ic_launcher_foreground,
-                R.drawable.ic_launcher_foreground,
-                R.drawable.ic_launcher_foreground,
-                R.drawable.ic_launcher_foreground
+                R.drawable.coral,
+                R.drawable.fish,
+                R.drawable.light,
+                R.drawable.seaweed
         );
 
         for(int i=0;i<listContentImg.size();i++){

@@ -33,29 +33,29 @@ public class MissionFragment extends Fragment {
     }
     private void getData(){
         List<Integer> listResId= Arrays.asList(
-                R.drawable.ic_launcher_foreground,
-                R.drawable.ic_launcher_foreground,
-                R.drawable.ic_launcher_foreground,
-                R.drawable.ic_launcher_foreground,
-                R.drawable.ic_launcher_foreground,
-                R.drawable.ic_launcher_foreground
+                R.drawable.vegan_illust,
+                R.drawable.ecobag_illust,
+                R.drawable.mission_img,
+                R.drawable.mission_img,
+                R.drawable.mission_img,
+                R.drawable.mission_img
         );
         List<String> listTitle=Arrays.asList(
-                "미션1","미션2","미션3","미션4","미션5","미션6"
+                "채식하기","봉투들기","분리배출","줍깅","걷기","제로웨이스트"
         );
         List<String> listContent=Arrays.asList(
-                "미션어ㅓ쩌구설명이렇게하면포인트를얻을수있다사람살려흐으흐흑졸작하기기시라",
-                "미션어ㅓ쩌구설명이렇게하면포인트를얻을수있다사람살려흐으흐흑졸작하기기시라",
-                "미션어ㅓ쩌구설명이렇게하면포인트를얻을수있다사람살려흐으흐흑졸작하기기시라",
-                "미션어ㅓ쩌구설명이렇게하면포인트를얻을수있다사람살려흐으흐흑졸작하기기시라",
-                "미션어ㅓ쩌구설명이렇게하면포인트를얻을수있다사람살려흐으흐흑졸작하기기시라",
-                "미션어ㅓ쩌구설명이렇게하면포인트를얻을수있다사람살려흐으흐흑졸작하기기시라"
+                "육류를 생산은 많은 환경오염을 일으킵니다. 채식도 맛있어요 예로 감자튀김",
+                "집에 비닐 봉투가 너무 많지는 않은가요 이제는 그만",
+                "귀찮아도 다 일반쓰레기로 버리지 마요 쓰레기도 쓸모가 있다고요",
+                "길거리에 쓰레기를 주워봐요. 쓰레기 버린 사람을 주울 수는 없잖아요",
+                "많이 앉아 있는 현대인, 환경과 건강 모두를 위해 걸어봐요",
+                "환경도 챙기고 감성도 챙기는 제로웨이스트 어떠하신가요"
         );
         List<String> listPoint=Arrays.asList(
-                "10","10","10","10","10","10"
+                "30","15","10","20","15","20"
         );
         List<String> listSuccess=Arrays.asList(
-                "(3","(3","(3","(3","(3","(3"
+                "(32","(20","(7","(5","(3","(2"
         );
         for(int i=0;i<listResId.size();i++){
             MissionData data=new MissionData();
