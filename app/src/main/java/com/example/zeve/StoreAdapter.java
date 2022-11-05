@@ -1,5 +1,6 @@
 package com.example.zeve;
 
+import android.content.Intent;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
@@ -15,6 +17,8 @@ import java.util.ArrayList;
 public class StoreAdapter extends RecyclerView.Adapter<StoreAdapter.ItemViewHolder> {
 
     private ArrayList<StoreData> storeData =new ArrayList<>();
+    private StoreDetail detail;
+    private Intent intent;
 
     @NonNull
     @Override
@@ -25,6 +29,17 @@ public class StoreAdapter extends RecyclerView.Adapter<StoreAdapter.ItemViewHold
     @Override
     public void onBindViewHolder(@NonNull ItemViewHolder holder, int position){
         holder.onBind(storeData.get(position));
+        detail=new StoreDetail();
+
+        holder.cons.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                intent = new Intent(view.getContext(), StoreDetail.class);
+                intent.putExtra("number", position);
+                view.getContext().startActivity(intent);
+            }
+        });
+
     }
     @Override
     public int getItemCount(){
@@ -35,6 +50,7 @@ public class StoreAdapter extends RecyclerView.Adapter<StoreAdapter.ItemViewHold
     }
 
     class ItemViewHolder extends RecyclerView.ViewHolder{
+        private ConstraintLayout cons;
         private ImageView imageView;
         private TextView textView1;
         private TextView textView2;
@@ -52,6 +68,7 @@ public class StoreAdapter extends RecyclerView.Adapter<StoreAdapter.ItemViewHold
             textView1.setText(data.getStoreName());
             textView2.setText(String.valueOf(data.getHeart()));
             textView3.setText(data.getStoreTag());
+            cons=itemView.findViewById(R.id.storeLay);
         }
     }
 }

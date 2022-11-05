@@ -1,6 +1,8 @@
 package com.example.zeve;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -13,6 +15,7 @@ public class StoreDetail extends AppCompatActivity {
 
     private StoreDetailMenuAdapter menuAdapter;
     private SnsAdapter snsAdapter;
+    private Intent intent;
 
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -20,6 +23,8 @@ public class StoreDetail extends AppCompatActivity {
 
         init();
         getData();
+
+        intent=getIntent();
     }
     private void init(){
         RecyclerView recyclerView1=findViewById(R.id.menuRecyclerView);
@@ -67,7 +72,6 @@ public class StoreDetail extends AppCompatActivity {
             data.setMenuPrice(listPrice.get(i));
             data.setMenuName(listName.get(i));
             data.setMenuTag(listTag.get(i));
-
 
             menuAdapter.addItem(data);
         }
