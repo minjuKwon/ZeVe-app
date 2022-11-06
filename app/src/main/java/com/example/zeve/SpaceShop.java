@@ -28,13 +28,13 @@ public class SpaceShop extends AppCompatActivity {
         createViewPager();
         settingTabLayout();
 
-        ImageView backImg=findViewById(R.id.shopBack);
-        backImg.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view) {
-               
-            }
-        });
+//        ImageView backImg=findViewById(R.id.shopBack);
+//        backImg.setOnClickListener(new View.OnClickListener(){
+//            @Override
+//            public void onClick(View view) {
+//
+//            }
+//        });
     }
 
     private void createFragment(){
