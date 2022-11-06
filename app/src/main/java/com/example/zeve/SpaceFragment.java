@@ -22,7 +22,8 @@ public class SpaceFragment extends Fragment {
     private SpaceEditForestFragment forestF;
     private SpaceEditSeaFragment seaF;
     private SpaceEditMudFragment mudF;
-    private int count=0;
+    private Intent intent;
+    private int count=1;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -55,6 +56,7 @@ public class SpaceFragment extends Fragment {
                 startActivity(intent);
             }
         });
+
         return v;
     }
     private void createFragment(){
