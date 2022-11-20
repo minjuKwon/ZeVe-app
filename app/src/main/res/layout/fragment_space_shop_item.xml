@@ -45,12 +45,12 @@
         android:id="@+id/shopItemName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="3dp"
-        android:layout_marginStart="43dp"
-        android:layout_marginLeft="43dp"
+        android:layout_marginTop="4dp"
         android:text="@string/name"
         android:textSize="15sp"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@id/shopNameView"
+        app:layout_constraintEnd_toEndOf="@id/shopNameView"
         app:layout_constraintTop_toBottomOf="@id/shopItemView" />
 
     <TextView
@@ -58,21 +58,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="2dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
         android:text="@string/wonIcon"
         android:textSize="12sp"
+        app:layout_constraintHorizontal_bias="0.45"
         app:layout_constraintStart_toStartOf="@id/shopNameView"
+        app:layout_constraintEnd_toEndOf="@id/shopNameView"
         app:layout_constraintTop_toBottomOf="@id/shopItemName" />
     <TextView
         android:id="@+id/shopItemPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="2dp"
-        android:layout_marginStart="2dp"
-        android:layout_marginLeft="2dp"
         android:text="@string/point"
         android:textSize="12sp"
+        app:layout_constraintHorizontal_bias="0"
         app:layout_constraintStart_toEndOf="@id/shopItemWon"
+        app:layout_constraintEnd_toEndOf="@id/shopNameView"
         app:layout_constraintTop_toBottomOf="@id/shopItemName" />
 </androidx.constraintlayout.widget.ConstraintLayout>
